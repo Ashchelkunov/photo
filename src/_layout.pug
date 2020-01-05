@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title JunkPhoto
+    block styles
+    link(rel="stylesheet" href="styles.less")
+  body
+    header.main-header
+      .header
+        .logo
+          h1
+          //- <img src="img/01.png" alt="logo">
+          h1 photography
+        nav.menu
+          a(href="index.pug") home
+          a(href="gallery.pug") gallery
+          a(href="collection.pug") collection
+          a.contatcs-btn(href="#About") About
+
+    main
+      block main
+      // о сайте
+      #About.About
+        .contatcs
+          .contatcs-content
+            button.contatcs-close ×
+            .block-about
+              h4.contatcs-header About
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                | Magni corrupti blanditiis, possimus doloribus sequi dolor
+                | omnis, dolore vel maiores vero vitae cumque porro cum labore
+                | quis odio illo. Unde, sint.
+            .block-contact
+              h4.contatcs-header Contact
+              .form
+                form(action="#")
+                  lable(for="#")
+                    p Name
+                  input.main-form-input(type="text")
+                  lable(for="#")
+                    p Email
+                  input.main-form-input(type="text")
+                  lable(for="#")
+                    p Message
+                  input.text(type="text")
+                  button.main-form-btn.button(type="submit") Send
+    footer.footer
+    // JAVAScript
+    script(src="main.js")
+    block scripts

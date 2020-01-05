@@ -1,0 +1,76 @@
+extends _layout.pug
+
+block styles
+  link(rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css")
+
+block scripts
+  script(src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js")
+  script(src="libs/fancybox/jquery.fancybox.min.js")
+
+block main
+  // Галлерея
+  .content
+    .digital.gallery
+      a(data-fancybox="gallery" href="../src/img/my_job/01.JPG")
+        img(src="../src/img/my_job_small/01.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/02.JPG")
+        img(src="../src/img/my_job_small/02.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/03.JPG")
+        img(src="../src/img/my_job_small/03.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/04.JPG")
+        img(src="../src/img/my_job_small/04.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/05.JPG")
+        img(src="../src/img/my_job_small/05.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/06.JPG")
+        img(src="../src/img/my_job_small/06.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/07.JPG")
+        img(src="../src/img/my_job_small/07.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/08.JPG")
+        img(src="../src/img/my_job_small/08.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/09.JPG")
+        img(src="../src/img/my_job_small/09.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/10.JPG")
+        img(src="../src/img/my_job_small/10.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/11.JPG")
+        img(src="../src/img/my_job_small/11.jpg")
+      a(data-fancybox="gallery" href="../src/img/my_job/12.JPG")
+        img(src="../src/img/my_job_small/12.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/13.JPG")
+        img(src="../src/img/my_job_small/13.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/14.JPG")
+        img(src="../src/img/my_job_small/14.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/15.JPG")
+        img(src="../src/img/my_job_small/15.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/16.JPG")
+        img(src="../src/img/my_job_small/16.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/17.JPG")
+        img(src="../src/img/my_job_small/17.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/18.JPG")
+        img(src="../src/img/my_job_small/18.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/19.JPG")
+        img(src="../src/img/my_job_small/19.JPG")
+      a(data-fancybox="gallery" href="../src/img/my_job/20.JPG")
+        img(src="../src/img/my_job_small/20.JPG")
+    #film.tab-pane(role="tabpanel")
+      .film.gallery
+        a(data-fancybox="gallery" href="../src/img/my_job/15.JPG")
+          img(src="../src/img/my_job_small/15.JPG")
+        a(data-fancybox="gallery" href="../src/img/my_job/16.JPG")
+          img(src="../src/img/my_job_small/16.JPG")
+        a(data-fancybox="gallery" href="../src/img/my_job/17.JPG")
+          img(src="../src/img/my_job_small/17.JPG")
+        a(data-fancybox="gallery" href="../src/img/my_job/18.JPG")
+          img(src="../src/img/my_job_small/18.JPG")
+        a(data-fancybox="gallery" href="../src/img/my_job/19.JPG")
+          img(src="../src/img/my_job_small/19.JPG")
+        a(data-fancybox="gallery" href="../src/img/my_job/20.JPG")
+          img(src="../src/img/my_job_small/20.JPG")
+    .men
+      input#nav-toggle.checkbox(type="checkbox" hidden="")
+      .gallery-nav
+        label.nav-toggle(for="nav-toggle" onclick="")
+        ul.title
+          li.nav-item
+            button.digital_btn Digital
+          li.nav-item
+            button.film_btn Film

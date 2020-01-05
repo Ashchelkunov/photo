@@ -47,7 +47,3 @@ film_btn.forEach(btn => {
     digital.style.display = 'none';
   };
 });
-
-
-
-
